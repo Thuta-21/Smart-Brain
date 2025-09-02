@@ -6,7 +6,7 @@ class ParticleBg extends Component {
   render () {
     return (
       <>
-        <ParticlesBg type="cobweb" num={25} bg={true} />
+        <ParticlesBg type="polygon" num={2} bg={true} />
       </>
     )
   }

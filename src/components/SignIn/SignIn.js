@@ -77,7 +77,7 @@ class SignIn extends Component {
                 </div>
                 <div className="center mt3 pa3 note">
                     <div className="shadow-5 bg-light-blue pl3 pr3 pt1 pb2 br3">
-                        <p className="f5">Hello! This is just a testing React App. <br/>So you can enter below email and password to sign in if you want to register.</p>
+                        <p className="f5">Hello! This is just a testing React App. <br/>So you can enter below email and password to sign in if you don't want to register.</p>
                         <p className="f5">Email: test@gmail.com</p>
                         <p className="f5">Password: testing</p>
                     </div>
