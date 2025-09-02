@@ -1,4 +1,5 @@
 import React from "react";
+import './Rank.css';
 
 const Rank = ({name, rank}) => {
     return (
@@ -6,9 +7,11 @@ const Rank = ({name, rank}) => {
             <div className="f5">
                 {`${name}, Your total detected count is`}
             </div>
-            <div className="f1">
-                {` ${rank}`}
-            </div>
+            {/* <div className="center"> */}
+                <div className="f1 center rank shadow-5 mt3" style={{fontWeight: 'bold'}}>
+                    {` ${rank}`}
+                </div>
+            {/* </div> */}
         </div>
     )
 }

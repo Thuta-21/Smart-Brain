@@ -6,7 +6,7 @@ const Navigation = ({onRouteChange, isSignedIn}) => {
             return (
                 <nav>
                     <div className="link dim pt3 pr3 f4" style={{display: 'flex', justifyContent: 'flex-end'}}>
-                        <a href="#link" onClick={() => onRouteChange('signin')}>Sign Out</a>
+                        <a href="#link" onClick={() => onRouteChange('signin')} className="changes pa2 pl3 pr3 shadow-2 br3">Sign Out</a>
                     </div>
                 </nav>
             );
@@ -14,8 +14,8 @@ const Navigation = ({onRouteChange, isSignedIn}) => {
             return (
                 <nav>
                     <div className="link dim pt3 pr3 f4" style={{display: 'flex', justifyContent: 'flex-end'}}>
-                        <a href="#link" className="ml4 mr4" onClick={() => onRouteChange('signin')}>Sign in</a>
-                        <a href="#link" onClick={() => onRouteChange('Register')}>Register</a>
+                        <a href="#link" className="ml mr3 grow changes pa2 pl3 pr3 shadow-2 br3" onClick={() => onRouteChange('signin')}>Sign in</a>
+                        <a href="#link" className='changes pa2 grow pl3 pr3 shadow-2 br3' onClick={() => onRouteChange('Register')}>Register</a>
                     </div>
                 </nav>
             )

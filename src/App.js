@@ -8,6 +8,7 @@ import Rank from './components/Rank/Rank';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
+import CopyURL from './components/CopyURL/CopyURL';
 import 'tachyons';
 
 const initialState = {
@@ -29,6 +30,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = initialState;
+  }
+
+  copyURL = (URL) => {
+    this.setState({input: URL})
+  }
+
+  remove = () => {
+    this.setState({url: ''});
+    this.setState({box: []});
+    this.setState({input: ''})
   }
 
   onLoad = (data) => {
@@ -118,8 +129,10 @@ class App extends Component {
               <Rank name={this.state.user.name} rank={this.state.user.entries}/>
               <ImgLinkForm 
               onInputChange={this.onInputChange}
-              onSubmit={this.OnSubmit}/>
-              <FaceRecognition imageURL={url} box={box}/>
+              onSubmit={this.OnSubmit}
+              setValue={this.state.input}/>
+              <FaceRecognition imageURL={url} box={box} copyURL={this.copyURL} remove={this.remove}/>
+              <CopyURL copyURL={this.copyURL}/>
             </div>
           : (route === 'signin')
           ? <SignIn onLoad={this.onLoad} onRouteChange={this.onRouteChange}/> 

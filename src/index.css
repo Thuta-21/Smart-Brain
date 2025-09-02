@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
 
 body {
   margin: 0;
@@ -6,9 +6,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  background: linear-gradient(126deg,#2967a8,#d2caae,#d2caae,#2967a8);
+  background: linear-gradient(155deg,#a9e8f4,lightYellow, #a9e8f4);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+  /* background: linear-gradient(126deg,#2967a8,#d2caae, #F95FF2, #69E6FE, #d2caae,#2967a8);
   background-size: 360% 360%;
-  animation: gradient-animation 12s ease infinite;
+  animation: gradient-animation 7s ease infinite; */
+}
+.note {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
 }
 
 code {
