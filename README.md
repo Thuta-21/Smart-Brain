@@ -1,9 +1,9 @@
-# Smart Brain (The AI Project)
+# 🧠 Smart Brain (AI Project)
 
-An AI project that detects people's faces and includes an authentication system.
+An AI-powered web application that detects faces in images and includes a full authentication system.
 
-•	Built with React Vite
+-  Built with React and Vite
 
-•	Authentication System, database using Express.js and PostgreSQL
+-  Implemented authentication and database using Express.js and PostgreSQL
 
-•	AI API - Clarifai API
+-  Integrated Clarifai AI API for face detection
